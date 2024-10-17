@@ -1,0 +1,37 @@
+<app-template></app-template>
+
+<div class="main-banner" id="top">
+  <video autoplay muted loop id="bg-video">
+    <source src="../../assets/images/gym-video.mp4" type="video/mp4">
+  </video>
+
+  <div class="video-overlay header-text">
+ <br> <br><br><br><br><br>
+
+    <mat-card  style="background-color: transparent; max-width: 40%; max-height: 90%; margin: auto; color: aliceblue;" class="my-card text-center mat-elevation-z4">
+      <mat-card-header class="justify-content-center">
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{coachDetails.firstName}} {{coachDetails.lastName}}</mat-card-title>
+        <mat-card-subtitle>{{coachDetails.email}}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-list class="my-list">
+          <mat-list-item>
+            <div matLine>
+              Speciality:
+              <button mat-raised-button color="warn">{{coachDetails.package}}</button>
+            </div>
+          </mat-list-item>
+          <mat-list-item>
+            <div matLine>
+              Mobile Number:
+              <button mat-raised-button color="accent">{{coachDetails.mobile}}</button>
+            </div>
+          </mat-list-item>
+        </mat-list>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+
+<app-foot></app-foot>
